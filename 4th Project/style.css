@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, rgb(8, 221, 236),rgb(162, 10, 244));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+  }
+  
+  .clip {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    position: absolute;
+  }
+  
+  .clip1 {
+    background: url(Leonardo_Diffusion_XL_Witness_the_transformation_of_your_scien_0.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 76% 0, 39% 100%, 0 100%);
+  }
+  
+  .clip2 {
+    background: url(Leonardo_Diffusion_XL_Witness_the_transformation_of_your_scien_1.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(19% 0, 87% 0, 64% 100%, 33% 100%);
+  }
+  
+  .clip3 {
+    background: url(Leonardo_Diffusion_XL_Witness_the_transformation_of_your_scien_2.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(82% 0, 100% 0, 100% 100%, 63% 100%);
+  }
+  
+  .container:hover .clip1 {
+    clip-path: polygon( 10%, 100% 0, 100% 100%, 100% 100%);
+  }
+  .container:hover .clip2 {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
+  .container:hover .clip3 {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
+  
+  .container .clip:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
